@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_gravity="center_horizontal"
+    android:background="#F2F2F3">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/ivLogo"
+            android:src="@drawable/logo"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:onClick="selectImage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="#453C5C"/>
+
+        <TextView
+            android:id="@+id/tvCollegeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="College Name"
+            android:textColor="#453C5C"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#453C5C"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Address"
+                    android:id="@+id/tvAddress"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Phone"
+                    android:textColor="#453C5C"
+                    android:id="@+id/tvPhone"
+                    android:gravity="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#453C5C"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/show_stops"
+                    android:id="@+id/bShowBuses"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="onClickShowStops"
+                    android:background="@drawable/buttonshape"
+                    android:layout_marginTop="30dp"
+                    android:textColor="#453C5C"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_stop"
+                    android:id="@+id/baddStopMain"
+                    android:onClick="onClickAddStopMain"
+                    android:background="@drawable/buttonshape"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#453C5C"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logout"
+                    android:id="@+id/bLogout"
+                    android:onClick="onClickLogout"
+                    android:background="@drawable/buttonshape"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#453C5C"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+        </LinearLayout>

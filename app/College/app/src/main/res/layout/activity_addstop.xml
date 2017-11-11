@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#F2F2F3">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/bBackAddStop"
+        android:src="@drawable/backbuttonimage"
+        android:background="@android:color/transparent"
+        android:onClick="onClickBackInAddStop" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/MyStyle"
+        android:layout_marginTop="60dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etStopName"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/stop_name"
+            android:backgroundTint="#453C5C"
+            android:textColor="#453C5C"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:baselineAligned="false">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:theme="@style/MyStyle">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/etBus1"
+                android:layout_weight="1"
+                android:hint="@string/bus_no_1"
+                android:backgroundTint="#453C5C"
+                android:textColor="#453C5C"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:theme="@style/MyStyle">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/etBus2"
+                android:layout_weight="1"
+                android:backgroundTint="#453C5C"
+                android:textColor="#453C5C"
+                android:hint="@string/bus_no_2" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:theme="@style/MyStyle">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etBus3"
+                android:inputType="number"
+                android:backgroundTint="#453C5C"
+                android:textColor="#453C5C"
+                android:hint="@string/bus_no_3" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_stop"
+        android:id="@+id/bAddStop"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/buttonshape"
+        android:onClick="onClickAddStop"
+        android:textColor="#453C5C"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

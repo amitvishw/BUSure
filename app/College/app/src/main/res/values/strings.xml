@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">College</string>
+    <string name="already_have_an_account">Already Have An Account ?</string>
+    <string name="state">State</string>
+    <string name="college_name">College Name</string>
+    <string name="city">City</string>
+    <string name="pincode">Pincode</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="login">LogIn</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="add_stop">ADD STOP</string>
+    <string name="show_stops">Show Stops</string>
+    <string name="logout">LogOut</string>
+    <string name="stop_name">Stop Name</string>
+    <string name="bus_no_1">Bus No 1</string>
+    <string name="bus_no_2">Bus No 2</string>
+    <string name="bus_no_3">Bus No 3</string>
+    <item name="visible" type="id"/>
+    <item name="masked" type="id"/>
+</resources>

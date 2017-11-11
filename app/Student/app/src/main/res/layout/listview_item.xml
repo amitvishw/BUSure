@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="7"
+    android:padding="5dp"
+    android:background="#F2F2F3">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Stop Name"
+            android:id="@+id/tvStopName"
+            android:gravity="left"
+            android:textSize="16sp"
+            android:textColor="#453C5C"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Bus No"
+                android:id="@+id/tvBusNo1"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textSize="16sp"
+                android:textColor="#453C5C" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Bus No"
+                android:id="@+id/tvBusNo2"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:gravity="left"
+                android:textColor="#453C5C" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Bus No"
+                android:id="@+id/tvBusNo3"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="#453C5C" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="1">
+
+       <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textView"
+           android:gravity="center"
+           android:textColor="#453C5C"
+           android:textSize="10sp"
+           android:background="#453C5C"
+           android:textIsSelectable="false" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ibTell"
+            android:src="@drawable/itemmenu"
+            android:background="@android:color/transparent"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:clickable="true"
+            android:layout_weight=".5" />
+    </LinearLayout>
+
+</LinearLayout>

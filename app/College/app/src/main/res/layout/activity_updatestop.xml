@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F2F2F3">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/bBackAddStop"
+        android:src="@drawable/backbuttonimage"
+        android:background="@android:color/transparent"
+        android:onClick="onClickBackInUpdateStop"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Stop"
+        android:id="@+id/tvStopNameUpdate"
+        android:textColor="#453C5C"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/etBus1Update"
+            android:backgroundTint="#453C5C"
+            android:textColor="#453C5C"
+            android:layout_weight="1"
+            android:hint="Bus No 1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/etBus2Update"
+            android:backgroundTint="#453C5C"
+            android:textColor="#453C5C"
+            android:layout_weight="1"
+            android:hint="Bus No 2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etBus3Update"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:backgroundTint="#453C5C"
+            android:textColor="#453C5C"
+            android:hint="Bus No 3" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Stop"
+        android:id="@+id/bUpdateStop"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onClickUpdate"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonshape"
+        android:textColor="#453C5C"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        />
+
+</LinearLayout>

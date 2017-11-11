@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Student</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="name">Name</string>
+    <string name="college">College</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account">Already Have An Account ?</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="bus_stop">Bus Stop</string>
+    <string name="my_stop">My Stop</string>
+    <string name="tell_a_friend">Tell A Friend</string>
+    <item name="visible" type="id"/>
+    <item name="masked" type="id"/>
+</resources>

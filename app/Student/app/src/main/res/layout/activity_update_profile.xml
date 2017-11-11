@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F2F3">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:onClick="onClickBack"
+            android:src="@drawable/backbuttonimage" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/etUpdateName"
+            android:hint="Full Name"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/name"
+            android:inputType="text"
+            android:textColor="#453C5C" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/etUpdateCollegeName"
+            android:layout_weight="1"
+            android:hint="College"
+            android:drawableLeft="@drawable/college"
+            android:inputType="text"
+            android:textColor="#453C5C"
+            android:onClick="selectCollege"
+            android:clickable="true"
+            android:focusable="false"
+            android:editable="false" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/etUpdateStop"
+            android:layout_weight="1"
+            android:hint="Bus Stop"
+            android:drawableLeft="@drawable/city"
+            android:inputType="text"
+            android:textColor="#453C5C"
+            android:onClick="selectStop"
+            android:clickable="true"
+            android:focusable="false"
+            android:editable="false" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:id="@+id/etUpdateEmail"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/email"
+            android:hint="Email"
+            android:textColor="#453C5C"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etUpdatePassword"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/password"
+            android:textColor="#453C5C"/>
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/bRegister"
+        android:onClick="onClickUpdate"
+        android:background="@drawable/buttonshape"
+        android:textColor="#453C5C"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

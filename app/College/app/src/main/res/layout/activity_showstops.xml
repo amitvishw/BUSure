@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dataHolder"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F2F2F3"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/bBackFromList"
+            android:src="@drawable/backbuttonimage"
+            android:background="#00000000"
+            android:onClick="onClickBack"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/bAddStop"
+            android:adjustViewBounds="false"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/addbutton"
+            android:background="@android:color/transparent"
+            android:onClick="onClickAddStopButton"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#453C5C"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvStopList" />
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F2F2F3"
+    android:padding="10dp">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Stop Name"
+        android:id="@+id/tvStopName"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#453C5C" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Bus No"
+            android:id="@+id/tvBusNo1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#453C5C" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Bus No"
+            android:id="@+id/tvBusNo2"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#453C5C" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Bus No"
+            android:id="@+id/tvBusNo3"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#453C5C" />
+
+    </LinearLayout>
+
+</LinearLayout>
