@@ -4,4 +4,4 @@ Android app to get real-time college bus routes and timings. Bus routes and sche
 ## College
 ![Alt text](https://github.com/amitvishw/BUSure/blob/master/screenshots/college.png)
 ## Student
-![Alt text](https://github.com/amitvishw/BUSure/blob/master/screenshots/student.png)
+<img src="https://github.com/amitvishw/BUSure/blob/master/screenshots/student.png" width="525">
